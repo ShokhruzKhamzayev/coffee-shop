@@ -1,0 +1,167 @@
+ @media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1000px;
+    }
+    .for-laptop {
+        display: block;
+    }
+
+    .for-phone {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        .nav-and-contact {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            nav ul {
+                display: flex;
+                gap: 90px;
+                list-style: none;
+            }
+            button {
+                display: flex;
+                width: 135px;
+                height: 43px;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    main {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 70px;
+       .text-main {
+        button {
+            animation-name: forButton;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-direction: alternate;
+        }
+       }
+        .img-main {
+            background-color: #E3EBE7;
+            padding: 150px 30px 100px;  
+            .main-content {
+                margin-bottom: -140px;
+            }
+            .follow-section {
+                position: absolute;
+                transform: rotate(-90deg);
+                display: flex;
+                right: -80px;
+                bottom: 100px;
+                gap: 20px;
+                .links-follow {
+                    display: flex;
+                    gap: 10px;
+                }
+                img {
+                    rotate: 90deg;
+                    animation-name: rotater;
+                    animation-duration: 1s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+                span {
+                    color: #444A4A;
+                    font-weight: 700;
+                    animation-name: bouncer;
+                    animation-duration: 1s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+            }
+        }
+    }
+    .info-one, .info-two {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 1000px;
+        margin: 120px auto 0px;
+        gap: 30px;
+        .img-info-one {
+            position: relative;
+            padding: 0;
+            width: 300px;
+            height: 300px;
+            span {
+                position: absolute;
+                rotate: -90deg;
+                top: 0px;
+                left: -20px;
+                font-size: 28px;
+                font-weight: 400;
+            }
+            img {
+                margin-bottom: -200px;
+                margin-left: 100px;
+            }
+        }
+        .text-info-one, .text-info-two {
+            max-width: 550px;
+        }
+        .img-info-two {
+            width: 500px;
+            position: relative;
+            span {
+                position: absolute;
+                rotate: -90deg;
+                right: -20px;
+                top: 0;
+                font-size: 28px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .info-two {
+        flex-direction: row-reverse;
+    }
+    
+    .menu-coffee {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .list-coffee {
+            max-width: 300px;
+            padding: 20px;
+        }
+    }
+    
+    footer {
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            p {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1300px;
+    }
+
+    .info-one, .info-two {
+        max-width: 1200px;
+        margin: 120px auto 0px;
+    }
+    
+    .footer {
+        justify-content: center !important;
+        gap: 150px;
+    }
+}
